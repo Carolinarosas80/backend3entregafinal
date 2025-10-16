@@ -16,8 +16,9 @@ docker run -p 8080:8080 --env-file .env adoptme-app
 
 env
 PORT=8080
-DB_URI=mongodb+srv://estudiocarorosas_db_user:cooper80@adoptme.mfeciti.mongodb.net/?retryWrites=true&w=majority&appName=adoptme
-JWT_SECRET=changeme
+DB_URI=mongodb+srv://usuario:contraseña@cluster.mongodb.net/dbname
+
+JWT_SECRET=
 🧪 Tests funcionales
 El proyecto incluye tests funcionales para todos los endpoints del router adoption.router.js, cubriendo:
 
