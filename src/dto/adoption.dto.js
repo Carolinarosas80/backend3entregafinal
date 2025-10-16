@@ -1,0 +1,1 @@
+export function validateAdoptionPayload(payload) { if (!payload || !payload.pet) { const err = new Error('ValidationError: pet is required'); err.status = 400; throw err; } return { pet: payload.pet, type: payload.type || null, adopter: payload.adopter || null }; }

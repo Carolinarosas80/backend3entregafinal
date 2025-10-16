@@ -1,0 +1,1 @@
+import Pet from '../models/Pet.js'; export const getAll = async (req,res)=>{ const pets=await Pet.find(); res.json(pets); }; export const createOne=async(req,res)=>{ const p=new Pet(req.body); const saved=await p.save(); res.status(201).json(saved); };

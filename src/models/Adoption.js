@@ -1,0 +1,1 @@
+import mongoose from 'mongoose'; const AdoptionSchema = new mongoose.Schema({ pet: { type: String, required: true }, type: String, adopter: String, status: { type: String, default: 'available' } }, { timestamps: true }); export default mongoose.model('Adoption', AdoptionSchema);

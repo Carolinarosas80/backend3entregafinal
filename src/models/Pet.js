@@ -1,0 +1,1 @@
+import mongoose from 'mongoose'; const PetSchema = new mongoose.Schema({ name: String, species: String, age: Number, adopted: { type: Boolean, default: false } }, { timestamps: true }); export default mongoose.model('Pet', PetSchema);
